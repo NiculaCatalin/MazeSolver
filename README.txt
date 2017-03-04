@@ -1,8 +1,14 @@
+Obiectiv:
+Obiectivul programului este gasirea celui mai scurt drum intre doua puncte R(Romeo) si 
+J(Juliet) dintre-o matrice de tip labirint unde valorile ' ' reprezinta locuri accesibile
+si 'X' obstacole. R si J se pot deplasa in oricare din cele 8 directii din jurul lor.
+R si J trebuie sa parcurga un numar egal de pasi si nu pot sta pe loc.
+
 Rezolvarea efectiva:
 Pentru a rezolva problema am folosit o forma a algoritmului lee care porneste de la un
 punct din matricea de joc data si formeaza o matrice de distante. Matricea de distante
 a unui punct este o matrice de valori intregi(initializata la 0), copie a matricei de 
-joc in care, in loc de X avem 0 si in loc de ' '/'R'/'J' avem lungimea drumului de la 
+joc in care, in loc de X avem 0 si in loc de ' ' / 'R' / 'J' avem lungimea drumului de la 
 acel punct pana la punctul dat. Am implementat acest lucru in metoda GetDistanceMatrix 
 din clasa Game.
 
